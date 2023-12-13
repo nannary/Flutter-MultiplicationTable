@@ -1,4 +1,6 @@
+// main.dart
 import 'package:flutter/material.dart';
+import 'multiplication_table.dart'; // Import เพิ่มเติม
 
 void main() {
   runApp(const MyApp());
@@ -77,26 +79,6 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class MultiplicationTableScreen extends StatelessWidget {
-  final String table;
-
-  const MultiplicationTableScreen(this.table, {super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text('โปรแกรมแม่สูตรคูณของนารีรัตน์'),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Text(table),
       ),
     );
   }
